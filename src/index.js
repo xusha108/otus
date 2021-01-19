@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
+  console.log("object")
   return(
     <div>
-      <p>Hello Changes</p>      
+      <p>Hello World</p>      
     </div>
   )
 }
