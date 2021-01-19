@@ -1,5 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App.js";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const App = () => {
+  return(
+    <div>
+      <p>Hello Changes</p>      
+    </div>
+  )
+}
+
+export default App;
+
+ReactDOM.render(<App />, document.getElementById("root"))
