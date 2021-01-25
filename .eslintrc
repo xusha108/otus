@@ -25,14 +25,14 @@
       }
     ],
     "no-restricted-syntax": [
-      "error",
+      "off",
       {
         "selector": "ExportDefaultDeclaration",
         "message": "Restricted default export, prefer named exports!"
       }
     ],
     "no-console": [
-      "error",
+      "off",
       {
         "allow": [
           "warn",
