@@ -1,8 +1,9 @@
 import readline from "readline-sync";
 import { isNum, parser } from "./parser";
 import { isOperator, Operator } from "./mathOperators";
+import { calculate } from "./calculate";
 
-function main(): void {
+export function main(): void {
   const enterStr: string = readline.question("Enter math expression: \n");
   const parserStr = parser(enterStr);
 
@@ -12,26 +13,11 @@ function main(): void {
   if (isValidInput) {
     const firstNum = parseInt(parserStr[0]);
     const secondNum = parseInt(parserStr[2]);
-
     const result = calculate(firstNum, parserStr[1] as Operator, secondNum);
     console.log(result);
   } else {
     console.log("Invalid input");
     main();
   }
-
-  function calculate(firstNum: number, operator: Operator, secondNum: number) {
-    switch (operator) {
-      case "+":
-        return firstNum + secondNum;
-      case "-":
-        return firstNum - secondNum;
-      case "*":
-        return firstNum * secondNum;
-      case "/":
-        return firstNum / secondNum;
-    }
-  }
 }
-
 main();
