@@ -3,7 +3,7 @@ import React, { FC } from "react";
 const App: FC = () => {
   return (
     <div>
-      <h1>Calculator</h1>
+      <h1>Project</h1>
     </div>
   );
 };

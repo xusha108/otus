@@ -1,18 +1,18 @@
-const HtmlPlugin = require("html-webpack-plugin");
-const path = require("path");
+const HtmlPlugin = require('html-webpack-plugin');
+const path = require('path');
 console.log(path.resolve(__dirname));
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: './src/index.tsx',
   resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
-      src: path.resolve(__dirname, "src/"),
+      src: path.resolve(__dirname, 'src/'),
     },
   },
   output: {
-    path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js',
   },
 
   module: {
@@ -22,15 +22,15 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader",
-            loader: "eslint-loader",
-            loader: "ts-loader",
+            loader: 'babel-loader',
+            loader: 'eslint-loader',
+            loader: 'ts-loader',
           },
         ],
       },
       {
         test: /\.html$/,
-        use: "html-loader",
+        use: 'html-loader',
       },
     ],
   },
@@ -39,8 +39,8 @@ module.exports = {
   },
   plugins: [
     new HtmlPlugin({
-      filename: "index.html",
-      template: "index.html",
+      filename: 'index.html',
+      template: 'index.html',
     }),
   ],
 };
