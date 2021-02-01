@@ -18,7 +18,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,html,css,md,yml,yaml}": [
+    "*.{js,ts,tsx}": [
       "npm run test",
       "npm run lint"
     ],
@@ -39,7 +39,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "@babel/preset-typescript": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",    
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
