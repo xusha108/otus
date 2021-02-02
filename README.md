@@ -1,9 +1,19 @@
-# Simple React Webpack boilerplate
+* Typescript
+* Eslint	* Eslint
+* Jest	* Jest
+* Precommit hooks / husky	* Precommit hooks / husky
 
-A ready to use simple boilerplate for React Apps.
+## Lesson 2:
+Math calculator with basic arithmetic operations without eval
 
-## Instructions
-
-* Clone the repo
-* Run `npm install`
-* Run `npm start`
+```npm run calc```
+Then you can calc simple math operations
+Examples:
+```
+> 10 + 10
+Result: 20
+> 10 + 10 * 20 - 30
+Result: 180
+> 19 + -10
+Result: 9
+```
